@@ -7,13 +7,12 @@
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: 'Volkhov';
 }
 
 .mt-4 {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
 }
 
 .mt-2 {
@@ -26,6 +25,12 @@ h4 {
 
 .text-secondary {
   color: #666;
+}
+.text-tertary{
+  color: #999999;
+}
+.padding-10{
+  padding: 10px;
 }
 
 .font-1 {
@@ -51,7 +56,13 @@ body {
 }
 
 .container-fluied {
-  background-color: red;
+  background-color: #FA7436;
+}
+
+.primary-bg {
+  background-color: #FA7436 !important;
+  color: #Fff !important;
+  border: 1px solid #FA7436 !important;
 }
 
 .container {
@@ -95,7 +106,7 @@ body {
   color: #FA7436;
 }
 
-.text-primary{
+.text-primary {
   color: #FA7436;
 }
 
@@ -150,7 +161,7 @@ body {
   margin-bottom: 30px;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
-  line-height:20px;
+  line-height: 20px;
   word-spacing: 3px;
 }
 
@@ -260,7 +271,17 @@ option {
 
 
 .section2 {
-  background-image: url('/image/section-2bg.png');
+  background-image: url('./image/section-2bg.png');
+}
+
+.section4 {
+  background-image: url('./image/section-4bg.png');
+}
+.section6 {
+  background-image: url('./image/Subscribe.png');
+  
+}
+.sectionbg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -293,128 +314,387 @@ option {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 280px;
+  width: 373px;
   padding: 20px;
   text-align: left;
 }
 
-  #section-2 .card-icon {
-    margin-bottom: 16px;
-  }
+#section-2 .card-icon {
+  margin-bottom: 16px;
+}
 
-  #section-2 .card-icon img {
-    width: 41px;
-    height: 48px;
-    display: inline-block;
-  }
-
-
-  #section-2 .card-content h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-
-  #section-2 .card-content p {
-    font-size: 14px;
-    color: #777;
-  }
-
-  /* -------------------Section 3---------------------- */
-  .imgFull {
-    width: 100%;
-    height: 100%;
-  }
-
-  #section-3 {
-    padding: 50px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-  }
+#section-2 .card-icon img {
+  width: 41px;
+  height: 48px;
+  display: inline-block;
+}
 
 
-  #section-3 .header {
-    margin-bottom: 40px;
-  }
+#section-2 .card-content h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
 
-  #section-3 .header h2 {
-    font-size: 24px;
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-  }
+#section-2 .card-content p {
+  font-size: 14px;
+  color: #777;
+}
 
-  #section-3 .header p {
-    font-size: 16px;
-    color: #777;
-  }
+/* -------------------Section 3---------------------- */
+.imgFull {
+  width: 100%;
+  height: 100%;
+}
+
+#section-3,
+#section-4,
+#section-5 {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+ 
+}
 
 
-  #section-3 .carousel-container {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto;
-  }
+#section-3 .header,
+#section-4 .header,
+#section-5 .header {
+  margin-bottom: 40px;
+}
+
+#section-3 .header h2,
+#section-4 .header h2,
+#section-5 .header h2 {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+#section-3 .header p,
+#section-4 .header p,
+#section-5 .header p {
+  font-size: 16px;
+  color: #777;
+}
+
+
+#section-3 .carousel-container,
+#section-4 .carousel-container,
+#section-5 .carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+#section-3 .card-container,
+#section-4 .card-container,
+#section-5 .card-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  justify-content: space-between;
+}
+
+#section-4 .card{
+  width: auto !important;
+}
+#section-3 .card,
+#section-4 .card,
+#section-5 .card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  /* padding: 20px; */
+  text-align: left;
+  margin-right: 20px;
+}
+
+
+#section-3 .card-icon,
+#section-4 .card-icon,
+#section-5 .card-icon {
+  margin-bottom: 16px;
+}
+
+#section-3 .card-icon img,
+#section-4 .card-icon img,
+#section-5 .card-icon img  {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+#section-3 .card-content h3,
+#section-4 .card-content h3,
+#section-4 .card-content h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#section-3 .card-content p,
+#section-4 .card-content p,
+#section-4 .card-content p {
+  font-size: 14px;
+  color: #777;
+}
+
+
+#section-3 .navigation-buttons,
+#section-5 .navigation-buttons {
+  margin-top: 20px;
+
+}
+
+#section-4 .navigation-buttons {
+  position: absolute;
+  top: -25px;
+  right: 0;
+
+}
+
+
+#section-3 .prev-btn,
+#section-3 .next-btn,
+#section-4 .prev-btn,
+#section-4 .next-btn {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  z-index: 1;
+  margin: 0 10px;
+
+}
+
+#section-3 .prev-btn:hover,
+#section-3 .next-btn:hover,
+#section-4 .prev-btn:hover,
+#section-4 .next-btn:hover {
+  background-color: #ea1515b3;
+}
+
+.content-align {
+  margin: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discounts {
+  text-decoration: line-through;
+  font-size: 18px;
+}
+
+.buyAt {
+  padding: 5px 5px;
+  background-color: #FFE7DB;
+  color: #FA7436;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.star {
+  width: 14px;
+  height: 14px;
+}
+
+.location {
+  width: 12px;
+  height: 14px;
+}
+
+/* ----------------------------------- */
+#section-3 .prev-btn,
+#section-3 .next-btn,
+#section-4 .prev-btn,
+#section-4 .next-btn {
+  background-color: #fff;
+  color: grey;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  z-index: 1;
+  margin: 0 10px;
+  height: 28px;
+  line-height: 1px;
+  border: 1px solid grey;
+  border-radius: 100%;
+}
+
+/* ------------------Section 5 ------------------------- */
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.dot.active {
+  background-color: #ff7b00;
+}
+
+/* ---------------section 6------------------------- */
+.subscribe-section {
+  /* background-color: #f97316;  */
+  padding: 40px 20px;
+  border-radius: 20px;
+  max-width: 1200px !important;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+/* .subscribe-section::before {
+  content: "";
+  position: absolute;
+  left: -100px;
+  top: 20px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10.01%);
+  background-size: 40px 40px;
+  border-radius: 50%;
+} */
+
+/* .subscribe-section::after {
+  content: "🌴🌴";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  opacity: 0.4;
+} */
+
+.subscribe-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  width: 425px;
+  max-width: 100%;
+  outline: none;
+  font-size: 16px;
+}
+
+.subscribe-form button {
+  padding: 12px 20px;
+  background-color: #f97316; 
+  color: white;              
+  border: none;
+  border-radius: 8px;
+  font-weight:100;
+  cursor: pointer;
+  margin-left: -124px;
+  letter-spacing: 1px;
+}
+
+.subscribe-form button:hover {
+  background-color: #ea580c;
+}
+
+/* ---------------Footer--------------------- */
+footer {
+      background-color: #f9fafb;
+      padding: 40px 20px;
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .footer-left {
+      flex: 1 1 40%;
+      min-width: 250px;
+    }
+    .footer-left h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .footer-left p {
+      color: #555;
+      line-height: 1.5;
+    }
+    .social-icons {
+      margin-top: 15px;
+      display: flex;
+      gap: 20px;
+    }
+    .icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .icon.orange {
+      background-color: #f97316;
+      color: white;
+    }
+
+    .footer-links {
+      flex: 1 1 55%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      min-width: 250px;
+    }
+    .link-section h4 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .link-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .link-section li {
+      margin-bottom: 8px;
+      color: #555;
+    }
+    .footer-bottom {
+      border-top: 1px solid #ddd;
+      padding: 20px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #666;
+    }
 
  
-  #section-3 .card-container {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
-  }
-
-
-  #section-3 .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 280px;
-    /* padding: 20px; */
-    text-align: left;
-    margin-right: 20px;
-  }
-
-
-  #section-3 .card-icon {
-    margin-bottom: 16px;
-  }
-
-  #section-3 .card-icon img {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-  }
-
-  #section-3 .card-content h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-
-  #section-3 .card-content p {
-    font-size: 14px;
-    color: #777;
-  }
-
- 
-  #section-3 .navigation-buttons {
-    margin-top: 20px;
-  
-  }
-
-  
-  #section-3 .prev-btn,
-  #section-3 .next-btn {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    border-radius: 50%;
-    z-index: 1;
-    margin: 0 10px;
-   
-  }
-
-  #section-3 .prev-btn:hover,
-  #section-3 .next-btn:hover {
-    background-color: rgba(0, 0, 0, 0.7);}
