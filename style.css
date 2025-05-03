@@ -10,7 +10,9 @@ h2,
 h3 {
   font-family: 'Volkhov';
 }
-
+h2{
+  font-size: 36px !important;
+}
 .mt-4 {
   margin-top: 1rem !important;
 }
@@ -549,7 +551,7 @@ option {
 /* ---------------section 6------------------------- */
 .subscribe-section {
   /* background-color: #f97316;  */
-  padding: 40px 20px;
+  padding: 86px 20px;
   border-radius: 20px;
   max-width: 1200px !important;
   margin: 0 auto;
