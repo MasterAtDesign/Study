@@ -151,7 +151,7 @@ body {
 }
 
 .hero-left h1 {
-  font-size: 48px;
+  font-size: 3.5rem;
   color: #222222;
   margin-bottom: 20px;
   font-family: 'Volkhov';
@@ -203,7 +203,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 500px;
+  min-height: 500px !important;
 }
 
 .custom-dropdown {
@@ -398,6 +398,8 @@ option {
   display: flex;
   transition: transform 0.3s ease-in-out;
   justify-content: space-between;
+ flex-flow: row;
+ overflow-x: auto;
 }
 
 #section-4 .card{
@@ -413,6 +415,8 @@ option {
   /* padding: 20px; */
   text-align: left;
   margin-right: 20px;
+  white-space: nowrap;
+ 
 }
 
 
@@ -825,4 +829,86 @@ footer {
     flex-direction: column;
 }
 
+
+/* ================ Media Query for Mobile responsive =========================== */
+/* Desktop default */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive mobile styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .header-center,
+  .header-right {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .header-center.show,
+  .header-right.show {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 8px 0;
+  }
+/* ===================================== */
+.hero-form {
+  display: flex;
+      flex-direction: column !important;
+      width: 100% !important;
+      align-items: flex-start!important;
+      border: 1px solid #dadada;
+      margin-top: 30px;
+  }
+      
+      .hero-form div{
+        width: 100%;
+      }
+      #section-2 .card-container{
+        flex-direction: column;
+
+      }
+      .card{
+        width: 100% !important;
+      }
+      .footer-links{
+        flex-direction: column;
+      }
+      .footer-bottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+}
+@media (max-width: 946px) {
+  .testimonial-section{
+  flex-direction: column;
+  }
+}
  
